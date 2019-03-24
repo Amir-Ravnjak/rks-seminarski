@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp">
+
+
+
+
+    <TextView
+        android:text="Dobro došli!"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/welcome"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Sportski centar modernog dizajna."/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Sadrži sve što je potrebno za jednog sportskog aktivistu, od velikih sportskih sala za rukomet, košarku i futsal, preko teretana do unutarnjih bazena za plivanje."/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Pored objekta se nalazi veliki travnjak za fudbal. Uz njega se nalaze dva teniska igrališta."/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Dođite i uvjerite se u kvalitetu koju samo mi nudimo."/>
+</LinearLayout>
+</ScrollView>

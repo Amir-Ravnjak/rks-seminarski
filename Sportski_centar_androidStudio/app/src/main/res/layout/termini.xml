@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tvTermini"
+        android:text="Termini"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnDatum"
+        android:layout_below="@+id/tvTermini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum"/>
+    <TextView
+        android:layout_below="@id/tvTermini"
+        android:layout_toRightOf="@+id/btnDatum"
+        android:layout_alignBaseline="@+id/btnDatum"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/tvDatum"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvProstorija"
+        android:layout_below="@id/btnDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Prostorija"/>
+    <Spinner
+        android:layout_below="@id/btnDatum"
+        android:id="@+id/spnrProstorija"
+        android:text="Prostorija"
+        android:layout_toRightOf="@id/tvProstorija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnTrazi"
+        android:text="trazi"
+        android:layout_below="@+id/spnrProstorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/listaTermina"
+        android:layout_below="@+id/btnTrazi"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <ImageView
+        android:id="@+id/slikaNote"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_writing" />
+
+
+    <TextView
+        android:id="@+id/tvProstorija"
+        android:layout_below="@+id/slikaNote"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="Prostorija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/nazivProstorije"
+        android:layout_below="@+id/tvProstorija"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvOd"
+        android:layout_below="@+id/nazivProstorije"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="Početak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvPocetak"
+        android:layout_below="@+id/tvOd"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvDo"
+        android:layout_below="@+id/tvPocetak"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="Kraj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvKraj"
+        android:layout_below="@+id/tvDo"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCijena"
+        android:layout_below="@+id/tvKraj"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:text="Cijena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cijenaRezervacije"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvCijena"
+
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/cbOdobrena"
+        android:text="Odobrena"
+        android:layout_below="@id/cijenaRezervacije"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"/>
+
+    <CheckBox
+        android:id="@+id/cbUplaceno"
+        android:text="Uplaćeno"
+        android:layout_below="@id/cbOdobrena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"/>
+</RelativeLayout>
+</ScrollView>
