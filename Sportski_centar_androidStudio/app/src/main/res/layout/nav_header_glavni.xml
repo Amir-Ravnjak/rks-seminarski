@@ -6,20 +6,30 @@
     android:background="@color/siva"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="10dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <TextView
+
+        android:background="@drawable/pocetna"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingLeft="16dp"
+        android:paddingBottom="10dp"
+        android:text="Sportski centar"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:contentDescription="@string/nav_header_desc"
-        android:layout_marginTop="15dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/sports" />
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pocetna" />
 
     <TextView
         android:layout_width="match_parent"

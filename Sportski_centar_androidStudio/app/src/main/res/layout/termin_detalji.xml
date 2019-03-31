@@ -9,7 +9,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp">
+    android:padding="32dp">
 
     <ImageView
         android:id="@+id/slikaNote"
@@ -81,14 +81,13 @@
     <Button
         android:id="@+id/btnRezervisi"
         android:layout_below="@+id/Slobodan"
+        android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
-        android:text="Rezervisi"
+        android:text="Rezerviši"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="10dp"
         android:layout_centerInParent="true"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 

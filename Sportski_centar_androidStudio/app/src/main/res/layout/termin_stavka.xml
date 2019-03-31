@@ -2,28 +2,38 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:descendantFocusability="blocksDescendants"
-    android:padding="15dp">
-
+    android:layout_height="88dp"
+    android:paddingLeft="16dp"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:id="@+id/ivTerm"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_term"
+        android:paddingRight="32dp"
+        />
     <TextView
         android:id="@+id/nazivProstorije"
+        android:layout_toRightOf="@id/ivTerm"
         android:text="Prostorija"
+        android:gravity="bottom"
+        android:textAlignment="gravity"
         android:textSize="15dp"
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="28dp"
         android:focusable="false"
         android:focusableInTouchMode="false"/>
 
     <TextView
+        android:layout_toRightOf="@id/ivTerm"
         android:id="@+id/tvTermin"
         android:layout_below="@+id/nazivProstorije"
-        android:paddingTop="7dp"
 
         android:text="Termin"
         android:layout_width="170dp"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:focusable="false"
         android:focusableInTouchMode="false"/>
 
@@ -31,13 +41,13 @@
         android:id="@+id/tvCijena"
         android:text="Cijena"
         android:layout_below="@id/nazivProstorije"
-        android:paddingTop="7dp"
         android:layout_toRightOf="@+id/tvTermin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:focusable="false"
         android:focusableInTouchMode="false"/>
     <CheckBox
+        android:layout_toRightOf="@id/ivTerm"
         android:id="@+id/cbSlobodan"
         android:layout_below="@id/tvTermin"
         android:text="Slobodan"

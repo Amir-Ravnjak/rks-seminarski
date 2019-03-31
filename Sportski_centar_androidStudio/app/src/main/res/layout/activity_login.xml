@@ -6,36 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="15dp"
     android:orientation="vertical">
 
 
-    <ImageView
-        android:id="@+id/slikaCentra"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/sports"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/SportskiCentar"
-        android:layout_below="@+id/slikaCentra"
         android:text="Sportski centar"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
+        android:background="@drawable/pocetna"
         android:textSize="20dp"
+        android:gravity="bottom"
+
+        android:textAlignment="center"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:id="@+id/tilkorisnickoIme"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/SportskiCentar"
         android:layout_height="wrap_content">
         <EditText
+            android:drawableLeft="@drawable/baseline_perm_identity_black_24dp"
             android:id="@+id/korisnickoIme"
             android:hint="Korisnicko ime"
             android:layout_width="match_parent"
@@ -46,11 +43,14 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/tillozinka"
         android:layout_below="@+id/tilkorisnickoIme"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/lozinka"
+            android:drawableLeft="@drawable/baseline_lock_black_24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Lozinka"
@@ -59,25 +59,29 @@
     <Button
         android:layout_below="@+id/tillozinka"
         android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:id="@+id/btnPrijava"
         android:text="prijava"
         android:textStyle="bold"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:layout_centerInParent="true"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
         android:layout_below="@+id/btnPrijava"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:id="@+id/btnRegistracija"
         android:text="registracija"
         android:textStyle="bold"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:layout_centerInParent="true"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>
