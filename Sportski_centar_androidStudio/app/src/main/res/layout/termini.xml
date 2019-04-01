@@ -48,6 +48,7 @@
 
     <Button
         android:id="@+id/btnTrazi"
+        android:background="@color/colorPrimary"
         android:text="trazi"
         android:layout_below="@+id/spnrProstorija"
         android:layout_width="match_parent"
