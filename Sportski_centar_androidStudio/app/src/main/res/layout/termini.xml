@@ -14,16 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btnDatum"
-        android:layout_below="@+id/tvTermini"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Datum"/>
+    
     <TextView
         android:layout_below="@id/tvTermini"
-        android:layout_toRightOf="@+id/btnDatum"
-        android:layout_alignBaseline="@+id/btnDatum"
         android:drawableLeft="@drawable/baseline_date_range_black_24dp"
         android:layout_marginLeft="16dp"
         android:id="@+id/tvDatum"
