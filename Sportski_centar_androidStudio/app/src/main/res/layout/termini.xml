@@ -50,7 +50,7 @@
         android:id="@+id/btnTrazi"
         android:text="trazi"
         android:layout_below="@+id/spnrProstorija"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <ListView
