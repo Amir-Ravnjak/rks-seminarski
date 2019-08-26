@@ -49,7 +49,7 @@ public class listaTermina extends Fragment {
 
     private Calendar calendar;
     private DatePickerDialog dialogCalendar;
-    private int godina;
+    private int godina=0;
     private int mjesec;
     private int dan;
     private boolean odabranDatum=false;
@@ -82,15 +82,26 @@ public class listaTermina extends Fragment {
         datum = view.findViewById(R.id.tvDatum);
         trazi = view.findViewById(R.id.btnTrazi);
         termini = view.findViewById(R.id.listaTermina);
-        btnDatum = view.findViewById(R.id.btnDatum);
+        
         spnrProstorija = view.findViewById(R.id.spnrProstorija);
 
-        btnDatum.setOnClickListener(new View.OnClickListener() {
+        datum.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 calendar = Calendar.getInstance();
-                int day = calendar.get(Calendar.DAY_OF_MONTH);
-                int month= calendar.get(Calendar.MONTH);
-                int year = calendar.get(Calendar.YEAR);
+                int year;
+                int day;
+                int month;
+                if(godina==0){
+                day = calendar.get(Calendar.DAY_OF_MONTH);
+                month= calendar.get(Calendar.MONTH);
+                year = calendar.get(Calendar.YEAR)
+                }
+                else{
+                day=dan;
+                    month=mjesec;
+                    year=godina;
+                    
+                }
                 dialogCalendar=new DatePickerDialog(getActivity(), android.R.style.Theme_Holo_Light_Dialog_MinWidth, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
