@@ -77,7 +77,7 @@ public class Termin extends Fragment {
         view.findViewById(R.id.btnRezervisi).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RezervisiSobu();
+                RezervisiTermin();
             }
         });
 
@@ -85,7 +85,7 @@ public class Termin extends Fragment {
         return view;
     }
 
-    private void RezervisiSobu() {
+    private void RezervisiTermin() {
         if(slobodan) {
             int klijentId = Global.prijavljeniKlijent.KlijentID;
             RezervacijaPostVM rezervacija = new RezervacijaPostVM();
@@ -93,7 +93,7 @@ public class Termin extends Fragment {
             rezervacija.TerminID = terminID;
             rezervacija.Odobrena = false;
             rezervacija.Uplaceno = false;
-            MyApiRequest.post(getActivity(), "api/rezervacija/", rezervacija , new MyRunnable<RezervacijaPostVM>() {
+            MyApiRequest.post(getActivity(), "api/rezervacije/", rezervacija , new MyRunnable<RezervacijaPostVM>() {
                 public void run(RezervacijaPostVM x) {
                 }
             });

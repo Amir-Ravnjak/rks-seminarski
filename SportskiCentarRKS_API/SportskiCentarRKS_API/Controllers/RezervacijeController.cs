@@ -64,6 +64,8 @@ namespace SportskiCentarRKS_API.Controllers
         }
 
         [ResponseType(typeof(Rezervacija))]
+        [HttpPost]
+        [Route("api/rezervacije")]
         public IHttpActionResult PostSoba([FromBody] RezervacijaPostVM rez)
         {
             
